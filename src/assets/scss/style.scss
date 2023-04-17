@@ -1,0 +1,26 @@
+@import "./components/navbar";
+@import "./components/movie-card";
+@import "./components/movie-card-actor";
+@import "./components/movie-details";
+@import "./components/companies";
+@import "./components/genres";
+@import "./pages/home";
+@import "./pages/search";
+@import "./pages/actor";
+@import "./base/typography";
+@import "./util/variables";
+@import "./components/_actorscard.scss";
+@import "./components/_footer.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: 'DM Sans', sans-serif;
+    font-family: 'Source Sans Pro', Arial, sans-serif;;
+    color: $color;
+}
+
+body {
+    background: $bg;
+}

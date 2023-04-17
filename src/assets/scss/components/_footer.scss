@@ -1,0 +1,23 @@
+@import "../util/variables";
+@import "../util/mixins";
+
+.footer {
+  @include df(column, center, center);
+  background: $footer;
+  width: 100vw;
+  height: 10vh;
+  margin-top: 4em;
+  font-size: clamp(.8em, 2vw, .9em);
+
+  a {
+    color: $sTextColor;
+  }
+
+  span {
+    color: $pTextColor;
+  }
+
+  a:hover {
+    font-size: clamp(.9em, 2vw, 1em);
+  }
+}

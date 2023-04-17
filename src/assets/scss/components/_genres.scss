@@ -1,0 +1,36 @@
+@import "../util/variables";
+@import "../util/mixins";
+
+.genres {
+  @include df(column, start, start);
+  gap: 0.5em;
+
+  &__container {
+    @include df(row, start, center);
+    gap: .5em;
+    margin: 1em 0;
+  }
+
+  &__genre {
+    @include df(row, start, start);
+    gap: 0.5em;
+  }
+
+  .line {
+    margin: 0;
+  }
+}
+
+.genrescard {
+  border: 2px solid #b3b3b3;
+  border-radius: 0.3em;
+  padding: 0.4em 1em;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  text-align: center;
+  background: #1b1b1b;
+  margin: 0;
+
+  h4 {
+    font-weight: 400;
+  }
+}

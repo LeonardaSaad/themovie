@@ -1,0 +1,7 @@
+
+@mixin df($direction, $jst, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $jst;
+  align-items: $align;
+}

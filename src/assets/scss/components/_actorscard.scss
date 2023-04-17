@@ -1,0 +1,47 @@
+@import "../util/variables";
+@import "../util/mixins";
+
+.cast {
+  @include df(row, start, start);
+  gap: 0.2em;
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  margin-top: 1em;
+}
+
+img {
+  margin: 0;
+}
+
+.actorcard {
+  border: 2px solid #585858;
+  border-radius: 0 0 0.3em 0.3em;
+
+  &__container {
+    width: 13vw;
+    display: block;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__desc {
+    width: 100%;
+    border-radius: 0.3em;
+    padding: 0.6em;
+    margin: 0;
+
+    h3 {
+      font-size: clamp(0.8em, 2vw, 0.9em);
+      font-weight: 600;
+      color: rgb(221, 221, 221);
+    }
+
+    p {
+      font-size: clamp(0.7em, 2vw, 0.8em);
+      color: rgb(184, 184, 184);
+      font-weight: 300;
+    }
+  }
+}
